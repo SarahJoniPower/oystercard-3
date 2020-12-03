@@ -10,8 +10,6 @@ class Oystercard
   def initialize
     @balance = 0
     @history = []
-    # @entry_station = nil
-    # @exit_station = nil
     @journey = Journey.new
   end
 
@@ -34,7 +32,7 @@ class Oystercard
     add_to_history
     @journey.complete
   end
-  
+
   # def in_journey?
   #   !!entry_station
   # end

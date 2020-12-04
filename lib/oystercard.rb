@@ -28,11 +28,8 @@ class Oystercard
     @journey.exit_station = station
     add_to_history
     @journey.complete
+    # @journey.entry_station = nil
   end
-
-  # def in_journey?
-  #   !!entry_station
-  # end
 
   def deduct(amount)
     @balance -= amount

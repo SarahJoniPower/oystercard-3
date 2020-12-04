@@ -23,4 +23,8 @@ class Journey
     @finished_journey
   end
 
+  def in_journey?
+    @entry_station != nil ? true : false
+  end
+
 end
